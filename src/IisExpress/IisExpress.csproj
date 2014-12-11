@@ -8,8 +8,8 @@
     <ProjectGuid>{49959F0A-83D2-46AA-86F2-87C3E941C324}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sandbox.IisExpress</RootNamespace>
-    <AssemblyName>Sandbox.IisExpress</AssemblyName>
+    <RootNamespace>RimDev.Sandbox.IisExpress</RootNamespace>
+    <AssemblyName>RimDev.Sandbox.IisExpress</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

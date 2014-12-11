@@ -2,7 +2,7 @@
 using System.Net;
 using Xunit;
 
-namespace Sandbox.IisExpress.Tests
+namespace RimDev.Sandbox.IisExpress
 {
     public class IisExpressGrainTests
     {

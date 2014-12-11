@@ -7,8 +7,8 @@
     <ProjectGuid>{BE5DFB16-D75E-4B63-8A09-356FB0FA5DCB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sandbox.IisExpress.Tests</RootNamespace>
-    <AssemblyName>Sandbox.IisExpress.Tests</AssemblyName>
+    <RootNamespace>RimDev.Sandbox.IisExpress</RootNamespace>
+    <AssemblyName>RimDev.Sandbox.IisExpress.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

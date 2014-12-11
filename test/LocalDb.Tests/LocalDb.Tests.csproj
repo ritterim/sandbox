@@ -7,8 +7,8 @@
     <ProjectGuid>{FE498FCF-E518-4788-B1CC-398B862AF0A1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sandbox.LocalDb.Tests</RootNamespace>
-    <AssemblyName>Sandbox.LocalDb.Tests</AssemblyName>
+    <RootNamespace>RimDev.Sandbox.LocalDb</RootNamespace>
+    <AssemblyName>RimDev.Sandbox.LocalDb.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

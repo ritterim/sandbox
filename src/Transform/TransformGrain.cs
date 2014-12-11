@@ -1,7 +1,7 @@
 ﻿using System;
 using RimDev.Automation.Transform;
 
-namespace Sandbox.Transform
+namespace RimDev.Sandbox.Transform
 {
     public class TransformGrain : IGrain
     {

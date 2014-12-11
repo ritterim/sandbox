@@ -1,12 +1,9 @@
 ﻿using System.IO;
 using System.Net;
 using RimDev.Automation.Transform;
-using Sandbox.IisExpress;
-using Sandbox.LocalDb;
-using Sandbox.Transform;
 using Xunit;
 
-namespace Sandbox.Intersection.Tests
+namespace RimDev.Sandbox.Intersection
 {
     public class MashupTests
     {

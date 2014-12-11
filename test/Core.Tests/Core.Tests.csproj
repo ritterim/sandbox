@@ -7,8 +7,8 @@
     <ProjectGuid>{AA14388E-BBA9-46B6-BE8F-B2C0CD49C21D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sandbox.Tests</RootNamespace>
-    <AssemblyName>Sandbox.Tests</AssemblyName>
+    <RootNamespace>RimDev.Sandbox</RootNamespace>
+    <AssemblyName>RimDev.Sandbox.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

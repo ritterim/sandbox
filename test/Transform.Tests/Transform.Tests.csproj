@@ -7,8 +7,8 @@
     <ProjectGuid>{71DA57BC-A432-43F1-963B-6EFF1C75F80D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sandbox.Transform.Tests</RootNamespace>
-    <AssemblyName>Sandbox.Transform.Tests</AssemblyName>
+    <RootNamespace>RimDev.Sandbox.Transform</RootNamespace>
+    <AssemblyName>RimDev.Sandbox.Transform.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

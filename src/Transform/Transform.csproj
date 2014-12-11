@@ -8,8 +8,8 @@
     <ProjectGuid>{42CCB1DF-4AFF-413B-9117-BA1183EC68B5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sandbox.Transform</RootNamespace>
-    <AssemblyName>Sandbox.Transform</AssemblyName>
+    <RootNamespace>RimDev.Sandbox.Transform</RootNamespace>
+    <AssemblyName>RimDev.Sandbox.Transform</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

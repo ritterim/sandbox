@@ -7,8 +7,8 @@
     <ProjectGuid>{726AC120-4D28-4DA2-9ADF-5AB8A13C08F3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sandbox.Intersection.Tests</RootNamespace>
-    <AssemblyName>Sandbox.Intersection.Tests</AssemblyName>
+    <RootNamespace>RimDev.Sandbox.Intersection</RootNamespace>
+    <AssemblyName>RimDev.Sandbox.Intersection.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

@@ -8,8 +8,8 @@
     <ProjectGuid>{E42DE5EE-DAD4-4B6E-9617-D0590BFB4C61}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sandbox.LocalDb</RootNamespace>
-    <AssemblyName>Sandbox.LocalDb</AssemblyName>
+    <RootNamespace>RimDev.Sandbox.LocalDb</RootNamespace>
+    <AssemblyName>RimDev.Sandbox.LocalDb</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

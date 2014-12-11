@@ -1,6 +1,6 @@
 using System;
 
-namespace Sandbox.IisExpress
+namespace RimDev.Sandbox.IisExpress
 {
     public static class IisExpressGrainExtensions
     {

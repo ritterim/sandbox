@@ -8,8 +8,8 @@
     <ProjectGuid>{32E7F3A3-1CD4-44DE-88A6-6CAF7FE2F66F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sandbox</RootNamespace>
-    <AssemblyName>Sandbox</AssemblyName>
+    <RootNamespace>RimDev.Sandbox</RootNamespace>
+    <AssemblyName>RimDev.Sandbox</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
