@@ -1,6 +1,6 @@
 using System;
 
-namespace Sandbox
+namespace RimDev.Sandbox
 {
     public interface IGrain : IDisposable
     {

@@ -1,4 +1,4 @@
-﻿namespace Sandbox.LocalDb
+﻿namespace RimDev.Sandbox.LocalDb
 {
     public interface ILocalDbConfiguration
     {

@@ -1,7 +1,7 @@
 ﻿using System.Data.SqlClient;
 using Xunit;
 
-namespace Sandbox.LocalDb.Tests
+namespace RimDev.Sandbox.LocalDb
 {
     public class LocalDbGrainTests
     {

@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace Sandbox.Transform.Tests
+namespace RimDev.Sandbox.Transform
 {
     public class TransformTests
     {

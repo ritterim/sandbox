@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{71DA57BC-A432-43F1-963B-6EFF1C75F80D}</ProjectGuid>
+    <ProjectGuid>{FE498FCF-E518-4788-B1CC-398B862AF0A1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sandbox.Transform.Tests</RootNamespace>
-    <AssemblyName>Sandbox.Transform.Tests</AssemblyName>
+    <RootNamespace>RimDev.Sandbox.LocalDb</RootNamespace>
+    <AssemblyName>RimDev.Sandbox.LocalDb.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="RimDev.Automation.Sql">
+      <HintPath>..\..\packages\RimDev.Automation.Sql.0.1.1\lib\net45\RimDev.Automation.Sql.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,7 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TransformTests.cs" />
+    <Compile Include="LocalDbGrainTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -53,9 +57,9 @@
       <Project>{32e7f3a3-1cd4-44de-88a6-6caf7fe2f66f}</Project>
       <Name>Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\Transform\Transform.csproj">
-      <Project>{42ccb1df-4aff-413b-9117-ba1183ec68b5}</Project>
-      <Name>Transform</Name>
+    <ProjectReference Include="..\..\src\LocalDb\LocalDb.csproj">
+      <Project>{e42de5ee-dad4-4b6e-9617-d0590bfb4c61}</Project>
+      <Name>LocalDb</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

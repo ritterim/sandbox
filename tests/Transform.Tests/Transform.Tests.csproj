@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BE5DFB16-D75E-4B63-8A09-356FB0FA5DCB}</ProjectGuid>
+    <ProjectGuid>{71DA57BC-A432-43F1-963B-6EFF1C75F80D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sandbox.IisExpress.Tests</RootNamespace>
-    <AssemblyName>Sandbox.IisExpress.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <RootNamespace>RimDev.Sandbox.Transform</RootNamespace>
+    <AssemblyName>RimDev.Sandbox.Transform.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -30,13 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Web.Administration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\..\packages\Microsoft.Web.Administration.7.0.0.0\lib\net20\Microsoft.Web.Administration.dll</HintPath>
-    </Reference>
-    <Reference Include="RimDev.Automation.WebHosting">
-      <HintPath>..\..\packages\RimDev.Automation.WebHosting.0.1.0\lib\net45\RimDev.Automation.WebHosting.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,7 +42,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IisExpressGrainTests.cs" />
+    <Compile Include="TransformTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,9 +53,9 @@
       <Project>{32e7f3a3-1cd4-44de-88a6-6caf7fe2f66f}</Project>
       <Name>Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\IisExpress\IisExpress.csproj">
-      <Project>{49959f0a-83d2-46aa-86f2-87c3e941c324}</Project>
-      <Name>IisExpress</Name>
+    <ProjectReference Include="..\..\src\Transform\Transform.csproj">
+      <Project>{42ccb1df-4aff-413b-9117-ba1183ec68b5}</Project>
+      <Name>Transform</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

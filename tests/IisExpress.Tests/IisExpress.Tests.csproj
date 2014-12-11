@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{726AC120-4D28-4DA2-9ADF-5AB8A13C08F3}</ProjectGuid>
+    <ProjectGuid>{BE5DFB16-D75E-4B63-8A09-356FB0FA5DCB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sandbox.Intersection.Tests</RootNamespace>
-    <AssemblyName>Sandbox.Intersection.Tests</AssemblyName>
+    <RootNamespace>RimDev.Sandbox.IisExpress</RootNamespace>
+    <AssemblyName>RimDev.Sandbox.IisExpress.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,20 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Web.XmlTransform">
-      <HintPath>..\..\packages\RimDev.Automation.Transform.0.1.0\lib\net45\Microsoft.Web.XmlTransform.dll</HintPath>
-    </Reference>
-    <Reference Include="RimDev.Automation.Sql">
-      <HintPath>..\..\packages\RimDev.Automation.Sql.0.1.1\lib\net45\RimDev.Automation.Sql.dll</HintPath>
-    </Reference>
-    <Reference Include="RimDev.Automation.Transform">
-      <HintPath>..\..\packages\RimDev.Automation.Transform.0.1.0\lib\net45\RimDev.Automation.Transform.dll</HintPath>
+    <Reference Include="Microsoft.Web.Administration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\packages\Microsoft.Web.Administration.7.0.0.0\lib\net20\Microsoft.Web.Administration.dll</HintPath>
     </Reference>
     <Reference Include="RimDev.Automation.WebHosting">
       <HintPath>..\..\packages\RimDev.Automation.WebHosting.0.1.0\lib\net45\RimDev.Automation.WebHosting.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -55,8 +49,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MashupTests.cs" />
+    <Compile Include="IisExpressGrainTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\Core\Core.csproj">
@@ -67,17 +64,6 @@
       <Project>{49959f0a-83d2-46aa-86f2-87c3e941c324}</Project>
       <Name>IisExpress</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\LocalDb\LocalDb.csproj">
-      <Project>{e42de5ee-dad4-4b6e-9617-d0590bfb4c61}</Project>
-      <Name>LocalDb</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\src\Transform\Transform.csproj">
-      <Project>{42ccb1df-4aff-413b-9117-ba1183ec68b5}</Project>
-      <Name>Transform</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

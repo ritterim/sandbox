@@ -36,7 +36,7 @@ using System.Linq;
 using System.Reflection;
 using System.Xml.Serialization;
 
-namespace Sandbox
+namespace RimDev.Sandbox
 {
     /// <summary>
     /// Class that provides extensible properties and methods. This

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>RimDev.Sandbox.IisExpress</id>
+    <version>0.0.0</version>
+    <authors>Ritter Insurance Marketing</authors>
+    <licenseUrl>https://raw.githubusercontent.com/ritterim/sandbox/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/ritterim/sandbox</projectUrl>
+    <description>An abstraction utilizing RimDev Automation libraries.</description>
+    <copyright>Copyright 2014 Ritter Insurance Marketing</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>rimdev sandbox automation iisexpress</tags>
+    <dependencies>
+      <dependency id="RimDev.Automation.IisExpress" version="[0.1,1.0)" />
+      <dependency id="RimDev.Sandbox" version="$version$" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="**\*.cs" target="src" exclude="obj\**\*.cs" />
+    <file src="bin\Release\RimDev.Sandbox.IisExpress.dll" target="lib\net45" />
+    <file src="bin\Release\RimDev.Sandbox.IisExpress.pdb" target="lib\net45" />
+  </files>
+</package>
