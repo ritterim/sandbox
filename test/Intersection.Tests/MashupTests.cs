@@ -1,6 +1,9 @@
 ﻿using System.IO;
 using System.Net;
 using RimDev.Automation.Transform;
+using RimDev.Sandbox.IisExpress;
+using RimDev.Sandbox.LocalDb;
+using RimDev.Sandbox.Transform;
 using Xunit;
 
 namespace RimDev.Sandbox.Intersection
