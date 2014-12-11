@@ -13,7 +13,7 @@
   </metadata>
   <files>
     <file src="**\*.cs" target="src" exclude="obj\**\*.cs" />
-    <file src="bin\Release\*.dll" target="lib\net45" />
-    <file src="bin\Release\*.pdb" target="lib\net45" />
+    <file src="bin\Release\RimDev.Sandbox.dll" target="lib\net45" />
+    <file src="bin\Release\RimDev.Sandbox.pdb" target="lib\net45" />
   </files>
 </package>

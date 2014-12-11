@@ -10,10 +10,14 @@
     <copyright>Copyright 2014 Ritter Insurance Marketing</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>rimdev sandbox automation config transform</tags>
+    <dependencies>
+      <dependency id="RimDev.Automation.Transform" version="[0.1,1.0)" />
+      <dependency id="RimDev.Sandbox" version="$version$" />
+    </dependencies>
   </metadata>
   <files>
     <file src="**\*.cs" target="src" exclude="obj\**\*.cs" />
-    <file src="bin\Release\*.dll" target="lib\net45" />
-    <file src="bin\Release\*.pdb" target="lib\net45" />
+    <file src="bin\Release\RimDev.Sandbox.Transform.dll" target="lib\net45" />
+    <file src="bin\Release\RimDev.Sandbox.Transform.pdb" target="lib\net45" />
   </files>
 </package>
