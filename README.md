@@ -7,15 +7,14 @@ Sandbox takes all the work done with the [RimDev Automation](http://github.com/r
 You can install Sandbox via Nuget.org using the **Sandbox** id.
 
 ```
-PM> Install-Package Sandbox
+PM> Install-Package RimDev.Sandbox
 ```
 
 This package will download the following core libraries, which can be used.
 
-- **Sandbox.Core**
-- **Sandbox.Tranform**
-- **Sandbox.IisExpress**
-- **Sandbox.LocalDb**
+- **RimDev.Sandbox.Tranform**
+- **RimDev.Sandbox.IisExpress**
+- **RimDev.Sandbox.LocalDb**
 
 which in turn utilize the RimDev Automation Libraries:
 
