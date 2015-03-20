@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Linq;
 
-namespace Sandbox.LocalDb
+namespace RimDev.Sandbox.LocalDb
 {
     [DebuggerDisplay("LocalDb Grain <{Name}>")]
     public class LocalDbGrain : IGrain, ILocalDbConfiguration

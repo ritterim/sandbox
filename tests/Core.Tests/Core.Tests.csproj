@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FE498FCF-E518-4788-B1CC-398B862AF0A1}</ProjectGuid>
+    <ProjectGuid>{AA14388E-BBA9-46B6-BE8F-B2C0CD49C21D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sandbox.LocalDb.Tests</RootNamespace>
-    <AssemblyName>Sandbox.LocalDb.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <RootNamespace>RimDev.Sandbox</RootNamespace>
+    <AssemblyName>RimDev.Sandbox.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="RimDev.Automation.Sql">
-      <HintPath>..\..\packages\RimDev.Automation.Sql.0.1.1\lib\net45\RimDev.Automation.Sql.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,7 +43,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LocalDbGrainTests.cs" />
+    <Compile Include="SandboxTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -53,12 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\Core\Core.csproj">
-      <Project>{32e7f3a3-1cd4-44de-88a6-6caf7fe2f66f}</Project>
+      <Project>{32E7F3A3-1CD4-44DE-88A6-6CAF7FE2F66F}</Project>
       <Name>Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\src\LocalDb\LocalDb.csproj">
-      <Project>{e42de5ee-dad4-4b6e-9617-d0590bfb4c61}</Project>
-      <Name>LocalDb</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

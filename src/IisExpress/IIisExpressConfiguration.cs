@@ -1,4 +1,4 @@
-namespace Sandbox.IisExpress
+namespace RimDev.Sandbox.IisExpress
 {
     public interface IIisExpressConfiguration
     {

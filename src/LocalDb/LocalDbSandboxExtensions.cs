@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Sandbox.LocalDb
+namespace RimDev.Sandbox.LocalDb
 {
     public static class LocalDbSandboxExtensions
     {

@@ -1,50 +1,38 @@
-*.doc  diff=astextplain
-*.DOC	diff=astextplain
-*.docx	diff=astextplain
-*.DOCX	diff=astextplain
-*.dot	diff=astextplain
-*.DOT	diff=astextplain
-*.pdf	diff=astextplain
-*.PDF	diff=astextplain
-*.rtf	diff=astextplain
-*.RTF	diff=astextplain
+*          text=auto
 
-*.jpg  	binary
-*.png 	binary
-*.gif 	binary
+*.bat      text=auto eol=crlf
+*.cmd      text=auto eol=crlf
+*.config   text=auto
+*.cs       text=auto diff=csharp
+*.cshtml   text=auto
+*.css      text=auto
+*.htm      text=auto
+*.html     text=auto
+*.js       text=auto
+*.msbuild  text=auto
+*.resx     text=auto
+*.props    text=auto
+*.pubxml   text=auto
+*.ruleset  text=auto
+*.StyleCop text=auto
+*.sql      text=auto eol=crlf
+*.svg      text=auto
+*.txt      text=auto
+*.xml      text=auto
+*.targets  text=auto
 
-*.cs text=auto diff=csharp 
-*.vb text=auto
-*.resx text=auto
-*.c text=auto
-*.cpp text=auto
-*.cxx text=auto
-*.h text=auto
-*.hxx text=auto
-*.py text=auto
-*.rb text=auto
-*.java text=auto
-*.html text=auto
-*.htm text=auto
-*.css text=auto
-*.scss text=auto
-*.sass text=auto
-*.less text=auto
-*.js text=auto
-*.lisp text=auto
-*.clj text=auto
-*.sql text=auto
-*.php text=auto
-*.lua text=auto
-*.m text=auto
-*.asm text=auto
-*.erl text=auto
-*.fs text=auto
-*.fsx text=auto
-*.hs text=auto
+*.proj     text=auto merge=union
+*.csproj   text=auto merge=union eol=crlf
+*.vbproj   text=auto merge=union eol=crlf
+*.fsproj   text=auto merge=union eol=crlf
+*.dbproj   text=auto merge=union eol=crlf
+*.sln      text=auto merge=union eol=crlf
 
-*.csproj text=auto
-*.vbproj text=auto
-*.fsproj text=auto
-*.dbproj text=auto
-*.sln text=auto eol=crlf
+*.jpg      binary
+*.png      binary
+*.gif      binary
+*.ico      binary
+*.otf      binary
+*.eot      binary
+*.ttf      binary
+*.woff     binary

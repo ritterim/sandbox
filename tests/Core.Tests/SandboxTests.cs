@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using Xunit;
 
-namespace Sandbox.Tests
+namespace RimDev.Sandbox
 {
     public class SandboxTests : IDisposable
     {

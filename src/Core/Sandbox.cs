@@ -6,7 +6,7 @@ using System.Linq;
 using System.Security.AccessControl;
 using System.Threading;
 
-namespace Sandbox
+namespace RimDev.Sandbox
 {
     public class Sandbox : Expando, IDisposable
     {
