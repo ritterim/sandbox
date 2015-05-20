@@ -35,7 +35,7 @@
       <HintPath>..\..\packages\RimDev.Automation.Transform.0.1.0\lib\net45\Microsoft.Web.XmlTransform.dll</HintPath>
     </Reference>
     <Reference Include="RimDev.Automation.Sql">
-      <HintPath>..\..\packages\RimDev.Automation.Sql.0.1.1\lib\net45\RimDev.Automation.Sql.dll</HintPath>
+      <HintPath>..\..\packages\RimDev.Automation.Sql.0.2.0\lib\net45\RimDev.Automation.Sql.dll</HintPath>
     </Reference>
     <Reference Include="RimDev.Automation.Transform">
       <HintPath>..\..\packages\RimDev.Automation.Transform.0.1.0\lib\net45\RimDev.Automation.Transform.dll</HintPath>
