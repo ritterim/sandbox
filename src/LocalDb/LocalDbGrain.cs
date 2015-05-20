@@ -10,16 +10,18 @@ namespace RimDev.Sandbox.LocalDb
         public LocalDbGrain(string name)
         {
             if (name == null) throw new ArgumentNullException("name");
-            
+
             Name = name;
             DatabasePrefix = Name;
             Version = RimDev.Automation.Sql.LocalDb.Versions.InstalledVersions.FirstOrDefault();
+            DatabaseSuffixGenerator = () => string.Format("{0}_{1}", Guid.NewGuid().ToString("N"), DateTime.Now.Ticks);
         }
 
         public string Name { get; protected set; }
         public string Version { get; protected set; }
         public string DatabaseName { get; protected set; }
         public string DatabasePrefix { get; protected set; }
+        public Func<string> DatabaseSuffixGenerator { get; protected set; }
 
         public RimDev.Automation.Sql.LocalDb Instance { get; protected set; }
 
@@ -32,7 +34,7 @@ namespace RimDev.Sandbox.LocalDb
         public void Setup(Sandbox sandbox)
         {
             var location = sandbox.CreateGrainDirectory(this);
-            Instance = new RimDev.Automation.Sql.LocalDb(DatabaseName, Version, location, DatabasePrefix);
+            Instance = new RimDev.Automation.Sql.LocalDb(DatabaseName, Version, location, DatabasePrefix, DatabaseSuffixGenerator);
         }
 
         public ILocalDbConfiguration WithVersion(string version)
@@ -55,7 +57,15 @@ namespace RimDev.Sandbox.LocalDb
         {
             if (databasePrefix == null) throw new ArgumentNullException("databasePrefix");
             DatabasePrefix = databasePrefix;
-            
+
+            return this;
+        }
+
+        public ILocalDbConfiguration WithDatabaseSuffix(Func<string> databaseSuffixGenerator)
+        {
+            if (databaseSuffixGenerator == null) throw new ArgumentNullException("databaseSuffixGenerator");
+            DatabaseSuffixGenerator = databaseSuffixGenerator;
+
             return this;
         }
     }
