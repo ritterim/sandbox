@@ -11,7 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>rimdev sandbox automation localdb</tags>
     <dependencies>
-      <dependency id="RimDev.Automation.Sql" version="[0.1,1.0)" />
+      <dependency id="RimDev.Automation.Sql" version="[0.3.0,1.0)" />
       <dependency id="RimDev.Sandbox" version="$version$" />
     </dependencies>
   </metadata>
