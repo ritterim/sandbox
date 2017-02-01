@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Net;
 using Xunit;
 
@@ -71,7 +72,10 @@ namespace RimDev.Sandbox.IisExpress
         private string CreateTempTestDirectory(string extension = "html", string content = Html)
         {
             string path = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName());
-            if (!Directory.Exists(path))
+
+            if (Directory.Exists(path))
+                throw new Exception("The temporary directory should not already exist.");
+            else
                 Directory.CreateDirectory(path);
 
             File.WriteAllText(Path.Combine(path, string.Format("index.{0}", extension)), content);
