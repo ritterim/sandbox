@@ -37,9 +37,9 @@
     <Reference Include="Microsoft.Web.XmlTransform">
       <HintPath>..\..\packages\RimDev.Automation.Transform.0.1.0\lib\net45\Microsoft.Web.XmlTransform.dll</HintPath>
     </Reference>
-    <Reference Include="RimDev.Automation.Sql, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\RimDev.Automation.Sql.0.2.0\lib\net45\RimDev.Automation.Sql.dll</HintPath>
+    <Reference Include="RimDev.Automation.Sql, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\RimDev.Automation.Sql.0.3.0\lib\net45\RimDev.Automation.Sql.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="RimDev.Automation.Transform">
       <HintPath>..\..\packages\RimDev.Automation.Transform.0.1.0\lib\net45\RimDev.Automation.Transform.dll</HintPath>
@@ -83,6 +83,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
