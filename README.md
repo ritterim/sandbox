@@ -2,6 +2,9 @@
 
 Sandbox takes all the work done with the [RimDev Automation](http://github.com/ritterim) libraries and encapsulates them in a simple to use abstraction aimed at making **integration testing** as easy as *child's play*.
 
+![NuGet Version](https://img.shields.io/nuget/v/RimDev.Sandbox.svg)
+![NuGet Download Count](https://img.shields.io/nuget/dt/RimDev.Sandbox.svg)
+
 ## Getting Started
 
 You can install Sandbox via Nuget.org using the **Sandbox** id.

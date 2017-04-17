@@ -7,6 +7,7 @@
 
     <BuildInParallel Condition=" '$(BuildInParallel)' == '' And $(MSBuildNodeCount) &gt; 1 ">true</BuildInParallel>
     <BuildInParallel Condition=" '$(BuildInParallel)' == '' ">false</BuildInParallel>
+    <TestInParallel Condition=" '$(TestInParallel)' == '' ">$(BuildInParallel)</TestInParallel>
 
     <RootPath>$([System.IO.Path]::GetFullPath("$(MSBuildThisFileDirectory)\..\"))</RootPath>
 
@@ -37,19 +38,21 @@
     <MSBuild Projects="@(Solutions)" Targets="Build" BuildInParallel="$(BuildInParallel)" />
   </Target>
 
-  <Target Name="Test" DependsOnTargets="Build">
+  <Target Name="Test" DependsOnTargets="RestorePackages">
     <ItemGroup>
-      <TestAssemblies Include="$(RootPath)tests\*\bin\$(Configuration)\*.Tests.dll" />
+      <TestAssemblies Include="$(RootPath)tests\**\bin\$(Configuration)\*.Tests.dll" />
     </ItemGroup>
 
-    <ItemGroup>
-      <TestTargets Include="$(MSBuildThisFileDirectory)\Build.Xunit.targets">
-        <AdditionalProperties>TestAssembly=%(TestAssemblies.FullPath)</AdditionalProperties>
-      </TestTargets>
-    </ItemGroup>
+    <PropertyGroup>
+      <XunitArgs>TestAssemblies=@(TestAssemblies)</XunitArgs>
+      <XunitArgs>TestInParallel=$(TestInParallel);$(XunitArgs)</XunitArgs>
 
-    <MSBuild Projects="@(TestTargets)" RunEachTargetSeparately="true" BuildInParallel="$(BuildInParallel)"
-             Condition=" '@(TestTargets)' != '' " />
+      <XunitArgs Condition=" '$(ParallelizeTestAssemblies)' != '' ">ParallelizeTestAssemblies=$(ParallelizeTestAssemblies);$(XunitArgs)</XunitArgs>
+      <XunitArgs Condition=" '$(ParallelizeTestCollections)' != '' ">ParallelizeTestCollections=$(ParallelizeTestCollections);$(XunitArgs)</XunitArgs>
+    </PropertyGroup>
+
+    <MSBuild Projects="$(RootPath)build\Build.Xunit.targets" Properties="$(XunitArgs)"
+             Condition=" '@(TestAssemblies)' != '' " />
   </Target>
 
   <Target Name="Package" DependsOnTargets="Clean; Build; Test">
