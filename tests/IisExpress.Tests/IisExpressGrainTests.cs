@@ -34,7 +34,7 @@ namespace RimDev.Sandbox.IisExpress
         }
 
         [Fact]
-        public void Can_resiter_with_sandbox_using_other_name()
+        public void Can_register_with_sandbox_using_other_name()
         {
             var sandbox = new Sandbox().UseIisExpress("Test", (sb, cfg) => cfg.WithSource(""));
             Assert.True(sandbox.Exists("Test"));
